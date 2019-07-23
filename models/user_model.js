@@ -10,13 +10,15 @@ const roles = {
 
 module.exports = class User {
 
-  constructor(newId, newFirstName, newLastName, newEmail, newPassword) {
+  constructor(newId, newFirstName, newLastName, newEmail, newPassword, newCellPhone, newInstruction) {
     this.id = newId;
     this.firstName = newFirstName;
     this.lastName = newLastName;
     this.email = newEmail;
     this.password = newPassword;
     this.role = roles.USER;
+    this.cell_phone = newCellPhone;
+    this.instruction = newInstruction;
   }
 
   get() {
