@@ -16,12 +16,12 @@ app.use ((req, res, next) => {
 });
 
 // route middleware
-app.use("/api/user", require("./src/api/user-routes"));
-app.use("/api/auth", require ('./src/api/auth-routes'));
-app.use("/api/product", require('./src/api/product-routes'));
-app.use("/api/merchant", require('./src/api/merchant-routes'));
-app.use("/api/order", require('./src/api/order-routes'));
-app.use("/api/checkout", require('./src/api/checkout-routes'));
+app.use("/api/user", require("./routes/user-routes"));
+app.use("/api/auth", require ('./routes/auth-routes'));
+app.use("/api/product", require('./routes/product-routes'));
+app.use("/api/merchant", require('./routes/merchant-routes'));
+app.use("/api/order", require('./routes/order-routes'));
+app.use("/api/checkout", require('./routes/checkout-routes'));
 
 const PORT = process.env.PORT || 5000;
 
