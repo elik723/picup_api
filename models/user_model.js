@@ -10,6 +10,7 @@ const roles = {
 
 module.exports = class User {
 
+<<<<<<< HEAD
     constructor(newId, newFirstName, newLastName, newEmail, newPassword) {
         this.id = newId;
         this.firstName = newFirstName;
@@ -18,6 +19,18 @@ module.exports = class User {
         this.password = newPassword;
         this.role = roles.USER;
     }
+=======
+  constructor(newId, newFirstName, newLastName, newEmail, newPassword, newCellPhone, newInstruction) {
+    this.id = newId;
+    this.firstName = newFirstName;
+    this.lastName = newLastName;
+    this.email = newEmail;
+    this.password = newPassword;
+    this.role = roles.USER;
+    this.cell_phone = newCellPhone;
+    this.instruction = newInstruction;
+  }
+>>>>>>> master
 
     get() {
         return new Promise((resolve, reject) => {
