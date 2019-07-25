@@ -1,6 +1,6 @@
-const User = require('../models/user-model');
+const User = require('../models/user_model');
 
-var bcrypt = require('bcryptjs');
+//var bcrypt = require('bcryptjs');
 //var jwt = require('jsonwebtoken');
 
 module.exports = class AuthService {

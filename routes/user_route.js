@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const User = require('../models/user-model');
+const User = require('../models/user_model');
 
 // string concatonate '/'
 router.get('/get', function (req, res) {
